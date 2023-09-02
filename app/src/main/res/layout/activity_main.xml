@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEnterPasscode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Enter Your Passcode"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lnrPinView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/lnrKeyboard"
+        app:layout_constraintTop_toBottomOf="@+id/tvEnterPasscode">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv0"
+            style="@style/PinStyle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv1"
+            style="@style/PinStyle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv2"
+            style="@style/PinStyle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv3"
+            style="@style/PinStyle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv4"
+            style="@style/PinStyle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv5"
+            style="@style/PinStyle" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lnrKeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnrPinView">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat style="@style/ButtonGroupStyle">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv1"
+                    style="@style/ButtonStyle"
+                    android:text="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv2"
+                    style="@style/ButtonStyle"
+                    android:text="2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv3"
+                    style="@style/ButtonStyle"
+                    android:text="3" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat style="@style/ButtonGroupStyle">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv4"
+                    style="@style/ButtonStyle"
+                    android:text="4" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv5"
+                    style="@style/ButtonStyle"
+                    android:text="5" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv6"
+                    style="@style/ButtonStyle"
+                    android:text="6" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat style="@style/ButtonGroupStyle">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv7"
+                    style="@style/ButtonStyle"
+                    android:text="7" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv8"
+                    style="@style/ButtonStyle"
+                    android:text="8" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv9"
+                    style="@style/ButtonStyle"
+                    android:text="9" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat style="@style/ButtonGroupStyle">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvC"
+                    style="@style/ButtonStyle"
+                    android:text="C" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv0"
+                    style="@style/ButtonStyle"
+                    android:text="0" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBackspace"
+                    style="@style/ButtonStyle"
+                    android:text="⌫" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
