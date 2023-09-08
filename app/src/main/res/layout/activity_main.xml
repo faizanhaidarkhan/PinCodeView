@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="Enter Your Passcode"
+        android:text="Enter Your Passcode New"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="22sp"
